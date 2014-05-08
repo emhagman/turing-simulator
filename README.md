@@ -14,7 +14,7 @@ The Enumerator will stop after 50 characters has been printed. This will change 
 to change this cut-off value for now.
 
 The format for the JSON files should be fairly self explanatory.
-An example file looks like this:
+The following example is an ENUMERATOR of the language *(00)\**
 
 	{
 		"Input": "--------------------",
