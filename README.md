@@ -8,7 +8,10 @@ To run the program:
 	
 	go run turing.go <jsonfilename.json>
 
-If you do not provide a filename, turing.json will be used.
+If you do not provide a filename, turing.json will be used. If at any point in time something is printed
+to the "PRINTER" using the "Print" key in the Rules array, the Turing Machine will be assumed to be an Enumerator.
+The Enumerator will stop after 50 characters has been printed. This will change very soon but you can modify the code
+to change this cut-off value for now.
 
 The format for the JSON files should be fairly self explanatory.
 An example file looks like this:
