@@ -5,6 +5,7 @@ A Turing Machine (Single Tape) Simulator. Works as Enumerator as well.
 For more details, please review the code and any of the JSON files available in the src/ folder.
 
 To run the program:
+	
 	go run turing.go <jsonfilename.json>
 
 If you do not provide a filename, turing.json will be used.
