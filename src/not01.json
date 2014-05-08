@@ -1,0 +1,62 @@
+{
+    "Input": "001101000110---",
+    "States": [
+        {
+            "Name": "Start",
+            "Start": true,
+            "Rules": [
+                {
+                    "Input": "0",
+                    "Direction": "R",
+                    "ToState": "Q0",
+                    "ToTape": "1",
+                    "Print": ""
+                },
+                {
+                    "Input": "1",
+                    "Direction": "R",
+                    "ToState": "Q0",
+                    "ToTape": "0",
+                    "Print": ""
+                },
+                {
+                    "Input": "-",
+                    "Direction": "R",
+                    "ToState": "Accept",
+                    "ToTape": "",
+                    "Print": ""
+                }
+            ]
+        },
+        {
+            "Name": "Q0",
+            "Rules": [
+                {
+                    "Input": "0",
+                    "Direction": "R",
+                    "ToState": "Start",
+                    "ToTape": "1",
+                    "Print": ""
+                },
+                {
+                    "Input": "1",
+                    "Direction": "R",
+                    "ToState": "Start",
+                    "ToTape": "0",
+                    "Print": ""
+                },
+                {
+                    "Input": "-",
+                    "Direction": "R",
+                    "ToState": "Accept",
+                    "ToTape": "",
+                    "Print": ""
+                }
+            ]
+        },
+        {
+            "Name": "Accept",
+            "Accept": true
+        }
+    ]
+}
