@@ -1,0 +1,177 @@
+{
+	"Input": "#00000>00000---",
+	"States": [
+		{
+			"Name": "Start",
+			"Start": true,
+			"Rules": [
+				{
+					"Input": "#",
+					"Direction": "R",
+					"ToState": "Q0",
+					"ToTape": "",
+					"Print": ""
+				}
+			]
+		},
+		{
+			"Name": "Q0",
+			"Rules": [
+				{
+					"Input": "0",
+					"Direction": "R",
+					"ToState": "Q0",
+					"ToTape": "",
+					"Print": ""
+				},
+				{
+					"Input": ">",
+					"Direction": "R",
+					"ToState": "Q1",
+					"ToTape": "",
+					"Print": ""
+				}
+			]
+		},
+		{
+			"Name": "Q1",
+			"Rules": [
+				{
+					"Input": "0",
+					"Direction": "R",
+					"ToState": "Q1",
+					"ToTape": "",
+					"Print": ""
+				},
+				{
+					"Input": "-",
+					"Direction": "L",
+					"ToState": "Q9",
+					"ToTape": "",
+					"Print": ""
+				}
+			]
+		},
+		{
+			"Name": "Q9",
+			"Rules": [
+				{
+					"Input": "0",
+					"Direction": "L",
+					"ToState": "Q9",
+					"ToTape": "",
+					"Print": ""
+				},
+				{
+					"Input": "X",
+					"Direction": "L",
+					"ToState": "Q9",
+					"ToTape": "",
+					"Print": ""
+				},
+				{
+					"Input": "-",
+					"Direction": "L",
+					"ToState": "Q9",
+					"ToTape": "",
+					"Print": ""
+				},
+				{
+					"Input": ">",
+					"Direction": "L",
+					"ToState": "Q9",
+					"ToTape": "",
+					"Print": ""
+				},
+				{
+					"Input": "#",
+					"Direction": "L",
+					"ToState": "Q3",
+					"ToTape": "",
+					"Print": ""
+				}
+			]
+		},
+		{
+			"Name": "Q3",
+			"Rules": [
+				{
+					"Input": "#",
+					"Direction": "R",
+					"ToState": "Q4",
+					"ToTape": "",
+					"Print": ""
+				}
+			]
+		},
+		{
+			"Name": "Q4",
+			"Rules": [
+				{
+					"Input": "X",
+					"Direction": "R",
+					"ToState": "Q4",
+					"ToTape": "",
+					"Print": ""
+				},
+				{
+					"Input": "0",
+					"Direction": "R",
+					"ToState": "Q5",
+					"ToTape": "X",
+					"Print": ""
+				}
+			]
+		},
+		{
+			"Name": "Q5",
+			"Rules": [
+				{
+					"Input": "0",
+					"Direction": "R",
+					"ToState": "Q5",
+					"ToTape": "",
+					"Print": ""
+				},
+				{
+					"Input": ">",
+					"Direction": "R",
+					"ToState": "Q6",
+					"ToTape": "",
+					"Print": ""
+				}
+			]
+		},
+		{
+			"Name": "Q6",
+			"Rules": [
+				{
+					"Input": "X",
+					"Direction": "R",
+					"ToState": "Q6",
+					"ToTape": "",
+					"Print": ""
+				},
+				{
+					"Input": "0",
+					"Direction": "R",
+					"ToState": "Q9",
+					"ToTape": "X",
+					"Print": ""
+				},
+				{
+					"Input": "-",
+					"Direction": "L",
+					"ToState": "Accept",
+					"ToTape": "",
+					"Print": ""
+				}
+			]
+		},
+		{
+			"Name": "Accept",
+			"Rules": [],
+			"Accept": true
+		}
+	]
+}

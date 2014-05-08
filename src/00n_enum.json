@@ -1,0 +1,68 @@
+{
+	"Input": "--------------------",
+	"States": [
+		{
+			"Name": "Start",
+			"Start": true,
+			"Rules": [
+				{
+					"Input": "-",
+					"Direction": "L",
+					"ToState": "Q0",
+					"ToTape": "$",
+					"Print": ""
+				}
+			]
+		},
+		{
+			"Name": "Q0",
+			"Rules": [
+				{
+					"Input": "0",
+					"Direction": "L",
+					"ToState": "Q0",
+					"ToTape": "",
+					"Print": ""
+				},
+				{
+					"Input": "$",
+					"Direction": "R",
+					"ToState": "Q1",
+					"ToTape": "",
+					"Print": ""
+				}
+			]
+		},
+		{
+			"Name": "Q1",
+			"Rules": [
+				{
+					"Input": "0",
+					"Direction": "R",
+					"ToState": "Q1",
+					"ToTape": "",
+					"Print": "0"
+				},
+				{
+					"Input": "-",
+					"Direction": "R",
+					"ToState": "Q2",
+					"ToTape": "0",
+					"Print": ""
+				}
+			]
+		},
+		{
+			"Name": "Q2",
+			"Rules": [
+				{
+					"Input": "-",
+					"Direction": "L",
+					"ToState": "Q0",
+					"ToTape": "0",
+					"Print": "#"
+				}
+			]
+		}
+	]
+}
